@@ -1,0 +1,51 @@
+.navBar__container{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 6vh;
+}
+
+.navBar__position{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.navBar__hambur{
+    display: block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu__hambur{
+    display: block;
+    background-color: rgb(123, 123, 241);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBar__menu{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: 0.5s;
+}
+
+.show{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: 0.8s;
+}
