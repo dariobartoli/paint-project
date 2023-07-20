@@ -15,9 +15,9 @@ const NavBar = () => {
             <span className="material-symbols-outlined menu__hambur">menu</span>
         </div>
         <div className={`navBar__menu ${showModal? "show" : ""}`}>
-            <NavLink to={"/"} onClick={handleClick}>Inicio</NavLink>
-            <NavLink to={"/works"} onClick={handleClick}>Trabajos</NavLink>
-            <NavLink to={"/contact"} onClick={handleClick}>Contacto</NavLink>
+            <NavLink to={"/"} onClick={handleClick} className="ancor">Inicio</NavLink>
+            <NavLink to={"/works"} onClick={handleClick} className="ancor">Trabajos</NavLink>
+            <NavLink to={"/contact"} onClick={handleClick} className="ancor">Contacto</NavLink>
         </div>
     </div>
   )

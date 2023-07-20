@@ -1,8 +1,15 @@
 import React from 'react'
+import HeaderPhone from '../components/HeaderPhone'
+import '../assets/styles/works.css'
 
 const Works = () => {
   return (
-    <div>Wasd</div>
+    <div>
+      <HeaderPhone/>
+      <div className='works__container'>
+        Nuestros trabajos
+      </div>
+    </div>
   )
 }
 

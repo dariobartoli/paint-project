@@ -1,0 +1,18 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 45%, rgba(205,205,205,1) 100%);
+    z-index: 1;
+    border-bottom: 1px rgb(172, 172, 172) solid;
+}
+
+.logo{
+    width: 50px;
+}
+
+.title{
+    font-size: 2rem;
+}
