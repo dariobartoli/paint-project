@@ -6,7 +6,7 @@ const HeaderPhone = () => {
   return (
     <div>
         <div className='header__container'>
-            <img src="./img/logo.png" alt="logo" className='logo'/>
+            <img src="./img/logo2.png" alt="logo" className='logo'/>
             <h1 className='title'>MultiColor</h1>
         </div>
     </div>

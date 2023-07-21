@@ -65,3 +65,54 @@
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     transition: 0.4s;
 }
+
+.logo__navBar{
+    display: none;
+}
+
+.title__navBar{
+    display: none;
+}
+
+@media screen and (min-width: 769px){
+    .navBar__position{
+        flex-direction: column;
+    }
+    .navBar__container{
+        position: relative;
+        background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
+        border-bottom: 2px white solid;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    .menu__hambur{
+        display: none;
+    }
+    .navBar__menu{
+        position: absolute;
+        top: 0;
+        right: 45%;
+        height: 100%;
+        flex-direction: row;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+        width: 300px;
+        background-image: none;
+    }
+    .ancor{
+        background-color: transparent;
+    }
+    .logo__navBar{
+        display: block;
+        width: 50px;
+    }
+    
+    .title__navBar{
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+}

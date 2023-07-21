@@ -11,6 +11,9 @@ const NavBar = () => {
 
   return (
     <div className="navBar__container">
+            <div>
+                <img src="./img/logo2.png" alt="logo" className='logo__navBar' />
+            </div>
         <div className="navBar__hambur" onClick={handleClick}>
             <span className="material-symbols-outlined menu__hambur">menu</span>
         </div>
@@ -18,6 +21,9 @@ const NavBar = () => {
             <NavLink to={"/"} onClick={handleClick} className="ancor">Inicio</NavLink>
             <NavLink to={"/works"} onClick={handleClick} className="ancor">Trabajos</NavLink>
             <NavLink to={"/contact"} onClick={handleClick} className="ancor">Contacto</NavLink>
+        </div>
+        <div className='title__navBar'>
+            <h1>MultiColor</h1>
         </div>
     </div>
   )

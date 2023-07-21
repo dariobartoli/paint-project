@@ -8,7 +8,7 @@ const Home = () => {
       <HeaderPhone/>
       <div className='home__container'>
         <div className='box__container'>
-          <h3>¿quienes somos?</h3>
+          <h3>¿Quienes somos?</h3>
           <p>Somos una empresa dedicada a embellecer hogares y brindar soluciones de mantenimiento integral para casas. Nuestra pasión por la pintura y la satisfacción del cliente nos impulsan a ofrecer resultados excepcionales.</p>
         </div>
         <div className='box__container'>
