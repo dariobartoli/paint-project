@@ -3,10 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 45%, rgba(205,205,205,1) 100%);
+    background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
     z-index: 1;
-    border-bottom: 1px rgb(172, 172, 172) solid;
+    border-bottom: 2px rgb(255, 255, 255) solid;
 }
 
 .logo{
@@ -15,4 +14,5 @@
 
 .title{
     font-size: 2rem;
+    color: white;
 }

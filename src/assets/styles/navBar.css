@@ -3,7 +3,7 @@
     bottom: 0;
     z-index: 1;
     height: 6vh;
-    background-color: rgb(255, 159, 142);
+    background-color: rgb(39, 39, 39);
 }
 
 .navBar__position{
@@ -21,7 +21,9 @@
     padding-bottom: 5px;
 }
 .menu__hambur{
-    background-color: tomato;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: 1px black solid;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -36,9 +38,9 @@
     bottom: 0;
     width: 100%;
     height: 100vh;
-    background-color: tomato;
+    background-image: linear-gradient(to right top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #2c2c2c, #383838, #444444, #595959, #707070, #878787, #9f9f9f);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,20 +48,20 @@
 }
 
 .ancor{
-    background-color: rgb(255, 134, 112);
+    background-color: rgb(44, 44, 44);
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px rgb(219, 69, 43) solid;
-    border-bottom: 1px rgb(219, 69, 43) solid;
+    border-top: 1px rgb(206, 206, 206) solid;
+    border-bottom: 1px rgb(206, 206, 206) solid;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.2rem;
 }
 
 .show{
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    transition: 0.8s;
+    transition: 0.4s;
 }
