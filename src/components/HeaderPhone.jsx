@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/header.css'
+import 'animate.css';
 
 
 const HeaderPhone = () => {
@@ -7,7 +8,7 @@ const HeaderPhone = () => {
     <div>
         <div className='header__container'>
             <img src="./img/logo2.png" alt="logo" className='logo'/>
-            <h1 className='title'>MultiColor</h1>
+            <h1 className='title animate__animated animate__zoomIn'>MultiColor</h1>
         </div>
     </div>
   )

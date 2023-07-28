@@ -1,13 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from "./components/NavBar"
 import Home from "./pages/Home"
-import Contact from "./pages/contact"
-import Works from "./pages/works"
+import Contact from "./pages/Contact"
+import Works from "./pages/Works"
 import './App.css'
-
+import { useState, useEffect } from "react"
+import images from "./data/images"
 
 
 function App() {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    setData(images)
+  }, [0])
 
 
   return (
@@ -17,7 +22,7 @@ function App() {
           <NavBar></NavBar>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/works" element={<Works/>}/>
+            <Route path="/works" element={<Works data={data}/>}/>
             <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </div>
