@@ -1,5 +1,9 @@
 .works__container{
-    background-image: linear-gradient(to right top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #2c2c2c, #383838, #444444, #595959, #707070, #878787, #9f9f9f);
+/*     background-image: linear-gradient(to right top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #2c2c2c, #383838, #444444, #595959, #707070, #878787, #9f9f9f);
+ */    
+    background-image: url('../../../public/img/background3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 1.5rem;
 /*     padding-bottom: 2rem; */
     display: flex;
@@ -187,7 +191,7 @@
         transition: 0.2s;
     }
     .works__image:hover{
-        scale: 1.2;
+        scale: 1.15;
         border-radius: 0.2rem;
         box-shadow: 0px 0px 19px 8px rgba(0,0,0,1);
         -webkit-box-shadow: 0px 0px 19px 8px rgba(0,0,0,1);

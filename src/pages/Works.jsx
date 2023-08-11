@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderPhone from '../components/HeaderPhone'
 import '../assets/styles/works.css'
 import { useState, useEffect } from 'react'
+import Gallery from '../components/Gallery'
 
 
 const Works = ({data}) => {
@@ -45,7 +46,9 @@ const Works = ({data}) => {
     <div>
       <HeaderPhone/>
       <div className='works__container'>
-        <h3 className='works__title'>Vista a nuestros trabajos:</h3>
+        <h3 className='works__title'>Vista a nuestros trabajos</h3>
+        <Gallery/>
+        <h3 className='works__title'>Galeria: </h3>
         <div className='works__image__contain'>
           {data.map((item) => {
             return <img src={item.src} key={item.id} alt="foto" className='works__image' onClick={handleClick} id={item.id}/>

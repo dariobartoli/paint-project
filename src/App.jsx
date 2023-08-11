@@ -6,6 +6,8 @@ import Works from "./pages/Works"
 import './App.css'
 import { useState, useEffect } from "react"
 import images from "./data/images"
+import './assets/styles/slide.css'
+import './assets/styles/gallery.css'
 
 
 function App() {

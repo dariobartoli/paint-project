@@ -3,10 +3,13 @@ import HeaderPhone from '../components/HeaderPhone'
 import '../assets/styles/home.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Slide from '../components/Slide';
 
 
 const Home = () => {
+  jQuery.noConflict(), //Para que funcione el Slide
   AOS.init();
+  
   return (
     <div>
       <HeaderPhone/>
@@ -22,6 +25,8 @@ const Home = () => {
             <img src="./img/casa1.webp" alt="casa" className='imagen__demostracion' data-aos="flip-right"/>
           </div>
         </div>
+
+        <Slide/>
         <div className='home__section1  home__reverse'>
           <div className='box__container'>
             <h3 className='home__subtitle'>Ofrecemos una amplia gama de sevicios, entre ellos:</h3>
