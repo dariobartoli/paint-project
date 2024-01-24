@@ -1,0 +1,96 @@
+.works__container{   
+    background: rgb(14,14,14);
+    background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(48,48,48,1) 100%);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.works__container>section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    max-width: 1000px;
+}
+.works__galeria, .works__carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.works__title{
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+.casas__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.casa__card{
+    background: rgb(228,228,228);
+    background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(136,136,136,1) 100%);
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 3px;
+    gap: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(53, 53, 53);
+    box-shadow: 0px 0px 2px rgb(75, 75, 75);
+}
+.card__image{
+    width: 220px;
+    height: 190px;
+    object-fit: fill;
+    border-radius: 2px;
+}
+.casa__card>p{
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    width: 95%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 2px;
+}
+
+
+
+
+@media (width> 768px) {
+    .works__title{
+        font-size: 2rem;
+    }
+    .works__container{
+        padding-top: 2.5rem;
+    }
+}
+
+
+@media (width> 1024px) {
+    .works__title{
+        font-size: 2.7rem;
+    }
+    .works__container{
+        padding-top: 3rem;
+    }
+ 
+}
+
+@media(width> 1440px) {
+    .works__container{
+        padding-top: 3.5rem;
+    }
+}

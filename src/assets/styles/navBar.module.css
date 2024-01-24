@@ -1,0 +1,161 @@
+.navBar__container{
+    position: relative;
+    background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
+    border-bottom: 2px white solid;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+.logo__navBar{
+    width: 40px;
+    height: 40px;
+}
+.title__navBar{
+    font-size: 0.7rem;
+}
+.navBar__hambur{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu__hambur{
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(99, 99, 99);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBar__menu{
+    position: fixed;
+    width: 100%;
+    top: 8vh;
+    left: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.navBar__menu>div{
+    width: 100%;
+}
+.hamburtitle__contain{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ancor{
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px rgba(206, 206, 206, 0.274) solid;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.active{
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px rgba(206, 206, 206, 0.274) solid;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.show{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: 0.4s;
+}
+
+
+
+
+@media (width>769px){
+    .navBar__container{
+        position: relative;
+        background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
+        border-bottom: 2px white solid;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1.5rem;
+    }
+    .navBar__hambur{
+        display: none;
+    }
+    .navBar__menu{
+        position: static;
+        left: auto;
+        top: auto;
+        height: 100%;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+        width: 300px;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .ancor{
+        background-color: transparent;
+    }
+    .active{
+        background-color: transparent;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .logo__navBar{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .title__navBar{
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .navBar__menu>div{
+        width: 100%;
+        position: relative;
+    }
+    .navBar__menu>div>div{
+        width: 100%;
+        bottom: 10px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: transparent;
+        position: absolute;
+        clip-path: polygon(20% 0, 0 0, 0 100%, 20% 100%);
+        transition: clip-path 0.7s, background-color 0.9s;
+    }
+    .navBar__menu>div:hover>div{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        transition: clip-path 0.7s, background-color 0.9s;
+        background-color: rgb(230, 230, 230);
+    }
+    
+}

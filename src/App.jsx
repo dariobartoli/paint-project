@@ -4,32 +4,23 @@ import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import Works from "./pages/Works"
 import './App.css'
-import { useState, useEffect } from "react"
-import images from "./data/images"
 import './assets/styles/slide.css'
-import './assets/styles/gallery.css'
+import Work from "./pages/Work"
 
 
 function App() {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    setData(images)
-  }, [0])
-
-
   return (
-    <>
+    <div>
       <Router>
-        <div className="navBar__position">
           <NavBar></NavBar>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/works" element={<Works data={data}/>}/>
+            <Route path="/works" element={<Works/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/works/:id" element={<Work/>}/>
           </Routes>
-        </div>
       </Router>
-    </>
+    </div>
   )
 }
 

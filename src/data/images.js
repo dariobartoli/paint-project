@@ -1,4 +1,4 @@
-const imagenes = [
+const images = [
     {
         id: 1,
         src: "./img/foto1.webp"
@@ -78,8 +78,7 @@ const imagenes = [
     {
         id: 20,
         src: "./img/foto5.jpg"
-    },
-
+    }
 ]
 
-export default imagenes
+export default images
