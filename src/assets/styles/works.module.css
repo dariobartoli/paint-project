@@ -36,8 +36,8 @@
     gap: 8px;
 }
 .casa__card{
-    background: rgb(228,228,228);
-    background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(136,136,136,1) 100%);
+    background: rgb(214,214,214);
+    background: linear-gradient(180deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 100%);
     width: 240px;
     display: flex;
     flex-direction: column;

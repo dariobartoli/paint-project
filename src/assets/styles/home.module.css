@@ -41,6 +41,7 @@
 .box__container__image{
     width: 90%;
     max-width: 500px;
+    height: 200px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -51,15 +52,18 @@
 }
 
 .imagen__demostracion{
-    width: 96%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
     border-radius: 0.3rem;
     border: 1px solid rgb(82, 82, 82);
     box-shadow: 0px 0px 2px rgb(148, 148, 148);
 }
 
+
 .title__home{
     color: #fafafa;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     text-shadow: 2px 2px 1px rgb(65, 65, 65);
 }
@@ -75,20 +79,63 @@
     text-shadow: 2px 2px 1px rgb(65, 65, 65);
 }
 
-@keyframes typing {
-    from { width: 0;}
-}
-
-@keyframes blink {
-    50% {border-color: transparent;}
-}
-
 .home__section1{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    width: 90%;
+    max-width: 1000px;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 750px;
+    gap: 2rem;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #202020;
+    border: 1px solid rgb(29, 29, 29);
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+.footer__container>p{
+    text-align: center;
+}
+@media (width>650px){
+    .box__container__image{
+        height: 350px;
+    }
+    .title__home{
+        font-size: 3rem;
+    }
+}
+@media (width>800px){
+    .box__container__image{
+        perspective: 1000px;
+    }
+    
+    .imagen__demostracion{
+        display: none;
+    }
+    .animation{
+        animation: image 0.3s linear, image2 0.3s linear;
+        animation-delay: 0s, 0.3s;
+        display: block;
+    }
+    
+    @keyframes image {
+        from {transform: translateY(-150px) translateZ(-1000px); opacity: 0.2;}
+        to {transform: translateY(0px) translateZ(-1000px); opacity: 0.6;}
+    }
+    @keyframes image2 {
+        from {transform: translateZ(-1000px);}
+        to {transform: translateZ(0px);}
+    }
 }
 
 @media (width>1000px) {
@@ -112,5 +159,13 @@
     }
     .box__container__cabezal>div>p{
         font-size: 1.3rem;
+    }
+    .footer__container{
+        font-size: 1.2rem;
+        margin-bottom: 10rem;
+    }
+    .home__section1{
+        flex-wrap: nowrap;
+        gap: 5rem;
     }
 }

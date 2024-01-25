@@ -55,11 +55,6 @@
 .navBar__menu>div{
     width: 100%;
 }
-.hamburtitle__contain{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .ancor{
     background-color: rgb(61, 61, 61);
@@ -70,7 +65,7 @@
     align-items: center;
     border-bottom: 1px rgba(206, 206, 206, 0.274) solid;
     text-decoration: none;
-    color: white;
+    color: rgb(221, 221, 221);
     font-size: 1.2rem;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
@@ -93,6 +88,11 @@
     transition: 0.4s;
 }
 
+.title__contain{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 
 
@@ -116,12 +116,13 @@
         top: auto;
         height: 100%;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-        width: 300px;
+        width: 600px;
         flex-direction: row;
         gap: 1.5rem;
     }
     .ancor{
         background-color: transparent;
+        width: auto;
     }
     .active{
         background-color: transparent;
@@ -155,7 +156,33 @@
     .navBar__menu>div:hover>div{
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
         transition: clip-path 0.7s, background-color 0.9s;
-        background-color: rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
     }
-    
+    .navBar__menu>div:hover>.ancor{
+        color: white;
+    }
+    .navBar__menu>div{
+        width: auto;
+    }
+    .title__contain{
+        gap: 1rem;
+    }
+    .logo__navBar{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (width>1200px) {
+    .title__contain{
+        position: absolute;
+        left: 5rem;
+    }
+}
+
+@media (width>1500px) {
+    .title__contain{
+        position: absolute;
+        left: 10rem;
+    }
 }
