@@ -49,24 +49,32 @@
     cursor: pointer;
     border: 1px solid rgb(53, 53, 53);
     box-shadow: 0px 0px 2px rgb(75, 75, 75);
+    transition: 2s;
+
 }
 .card__image{
     width: 220px;
     height: 190px;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 2px;
 }
 .casa__card>p{
-    background-color: rgb(10, 10, 10);
+    background-color: #0a0a0a;
+    border: 1px solid #0a0a0a;
     text-align: center;
     width: 95%;
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
     border-radius: 2px;
+    transition: 0.3s;
 }
-
-
+.casa__card>p:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0a0a0a;
+    scale: 1.05;
+    transition: 0.3s;
+}
 
 
 @media (width> 768px) {

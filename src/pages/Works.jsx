@@ -39,7 +39,7 @@ const Works = () => {
                             <img src={casa.portada} alt="" className={styles.card__image}/>
                           </Atropos>
                         </div>
-                        <p>{casa.fecha}</p>
+                        <p>Ver más</p>
                     </div>
               )) : ""}
             </div>

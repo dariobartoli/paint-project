@@ -7,7 +7,8 @@ const CasaContext = createContext();
 export function CasaProvider({children}){
   const [data, setData] = useState([])
   useEffect(() => {
-    setData(casas)
+    const reversed = [...casas].reverse()
+    setData(reversed)
   }, [])
 
 

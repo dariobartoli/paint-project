@@ -46,6 +46,9 @@ const Work = () => {
     };
   return (
     <div className={styles.container}>
+        {casa[0]? 
+        <h3 className={styles.fecha}>{casa[0].fecha}</h3>
+        :""}
         <Slider {...settings} className={styles.images__container}>
             {casa[0]? casa[0].fotos.map((item,index) => (
                 <div key={index} className={styles.images__box}>
@@ -54,6 +57,16 @@ const Work = () => {
             )): ""}
         </Slider>
         <p className={styles.material__text}>Material utilizado: <span>{casa[0]? casa[0].material :""}</span></p>
+
+        <div className={styles.video__container}>
+          {casa[0] && casa[0].videos? 
+          casa[0].videos.map((item, index) => (
+            <div key={index}>
+              <iframe src={`https://www.youtube.com/embed/${item}`} frameBorder="0" allowFullScreen={true}></iframe>
+            </div>
+          ))
+          : ""}
+        </div>
     </div>
   )
 }

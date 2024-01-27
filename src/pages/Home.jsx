@@ -1,18 +1,22 @@
 import React from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Slide from '../components/Slide';
 import styles from '../assets/styles/home.module.css'
 import { useState, useRef, useEffect } from 'react';
 
 
+
+
 const Home = () => {
-  jQuery.noConflict(), //Para que funcione el Slide
-  AOS.init();
+  jQuery.noConflict() //Para que funcione el Slide
+
+  
   const [animation, setAnimation] = useState(false)
   const [imageAnimation2, setImageAnimation2] = useState(false)
   const targetRef = useRef(null);
   const image2Ref = useRef(null);
+  const [texto, setTexto] = useState('')
+  const textoOriginal = 'Muulticolor'
+  const velocidadEscritura = 100;
 
   const windowWidth = window.innerWidth;
 
@@ -95,6 +99,28 @@ const Home = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []); // Dependencia vacía para ejecutar este efecto solo una vez al montar el componente
+
+
+  useEffect(() => {
+    let index = 0;
+    const intervalo = setInterval(() => {
+        // Agregar la letra del texto
+        setTexto(prevTexto => {
+            if (index < textoOriginal.length) {
+                return prevTexto + textoOriginal[index];
+            }
+            return prevTexto;
+        });
+        index++;
+
+        // Detener la escritura automática al llegar al final del texto original
+        if (index === textoOriginal.length) {
+            clearInterval(intervalo);
+        }
+    }, velocidadEscritura);
+
+    return () => clearInterval(intervalo);
+    }, []); // El array vacío como segundo argumento de useEffect garantiza que el efecto solo se ejecute una vez al montar el componente
   
 
   return (
@@ -102,7 +128,7 @@ const Home = () => {
       <div className={styles.home__container}>
         <div className={styles.home__section1}>
           <div className={styles.box__container__cabezal}>
-            <h3 className={styles.title__home}>Multicolor</h3>
+            <h3 className={styles.title__home}>{texto}</h3>
             <div>
               <p>Somos una empresa dedicada a embellecer hogares y brindar soluciones de mantenimiento integral para casas. Nuestra pasión por la pintura y la satisfacción del cliente nos impulsan a ofrecer resultados excepcionales.</p>
             </div>
