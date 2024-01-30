@@ -15,7 +15,7 @@ const Home = () => {
   const targetRef = useRef(null);
   const image2Ref = useRef(null);
   const [texto, setTexto] = useState('')
-  const textoOriginal = 'Muulticolor'
+  const textoOriginal = 'Meendoza & Asociados'
   const velocidadEscritura = 100;
 
   const windowWidth = window.innerWidth;
@@ -130,7 +130,7 @@ const Home = () => {
           <div className={styles.box__container__cabezal}>
             <h3 className={styles.title__home}>{texto}</h3>
             <div>
-              <p>Somos una empresa dedicada a embellecer hogares y brindar soluciones de mantenimiento integral para casas. Nuestra pasión por la pintura y la satisfacción del cliente nos impulsan a ofrecer resultados excepcionales.</p>
+              <p>Nos dedicadamos a embellecer hogares y brindar soluciones de mantenimiento integral para casas. Nuestra pasión por la pintura y la satisfacción del cliente nos impulsan a ofrecer resultados excepcionales.</p>
             </div>
           </div>
         </div>

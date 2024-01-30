@@ -15,7 +15,7 @@ const NavBar = () => {
         <div className={styles.title__contain}>
             <img src="https://i.ibb.co/QbTpM7b/logo2.png" alt="logo" className={styles.logo__navBar} />
             <div className={`${styles.title__navBar} animate__animated animate__zoomIn`}>
-                <h1>MultiColor</h1>
+                <h1>M&A</h1>
             </div>
         </div>
         <div className={`${styles.navBar__menu} ${showModal? styles.show : ""}`}>
