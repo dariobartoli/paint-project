@@ -70,7 +70,6 @@ const casas = [
             'https://i.ibb.co/VQ5L88q/Imagen-de-Whats-App-2024-01-24-a-las-23-18-39-adc4452b.jpg',
             'https://i.ibb.co/CP6RwnK/Imagen-de-Whats-App-2024-01-24-a-las-23-21-15-2db788cb.jpg',
             'https://i.ibb.co/KwwRWfD/Imagen-de-Whats-App-2024-01-24-a-las-23-21-15-e6d9e559.jpg',
-            ''
         ],
         material: 'vacio'
     },

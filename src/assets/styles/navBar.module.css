@@ -1,5 +1,4 @@
 .navBar__container{
-    position: relative;
     background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
     border-bottom: 2px white solid;
     height: 8vh;
@@ -98,7 +97,6 @@
 
 @media (width>769px){
     .navBar__container{
-        position: relative;
         background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
         border-bottom: 2px white solid;
         height: 10vh;
@@ -136,7 +134,7 @@
     }
     .title__navBar{
         display: block;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: white;
     }
     .navBar__menu>div{

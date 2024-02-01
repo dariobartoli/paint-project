@@ -1,0 +1,42 @@
+.footer{
+    min-height: 10vh;
+    padding: 8px;
+    width: 100%;
+    background-color: #aaaaaa;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #4d4d4d;
+    gap: 1rem;
+}
+.footer>h4{
+    color: #131313;
+    font-size: 1.3rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.contacto>h4{
+    color: #131313;
+}
+.contacto>div>p{
+    color: #131313;
+}
+.contacto>div>p>span{
+    color: #3b3b3b;
+}
+
+
+.image{
+    width: 40px;
+    transition: 0.5s;
+}
+.image:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}

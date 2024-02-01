@@ -2,6 +2,7 @@ import React from 'react'
 import Slide from '../components/Slide';
 import styles from '../assets/styles/home.module.css'
 import { useState, useRef, useEffect } from 'react';
+import Footer from '../components/Footer';
 
 
 
@@ -128,7 +129,7 @@ const Home = () => {
       <div className={styles.home__container}>
         <div className={styles.home__section1}>
           <div className={styles.box__container__cabezal}>
-            <h3 className={styles.title__home}>{texto}</h3>
+            <h1 className={styles.title__home}>{texto}</h1>
             <div>
               <p>Nos dedicadamos a embellecer hogares y brindar soluciones de mantenimiento integral para casas. Nuestra pasión por la pintura y la satisfacción del cliente nos impulsan a ofrecer resultados excepcionales.</p>
             </div>
@@ -144,7 +145,7 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.box__container__image}>
-              <img src="https://i.ibb.co/6smdpC5/Imagen-de-Whats-App-2024-01-20-a-las-21-28-24-122d8b9c.jpg" alt="casa" className={`${styles.imagen__demostracion} ${animation? styles.animation : ""}`} />
+              <img src="https://i.ibb.co/6smdpC5/Imagen-de-Whats-App-2024-01-20-a-las-21-28-24-122d8b9c.jpg" alt="mendoza-&-asociados-image" className={`${styles.imagen__demostracion} ${animation? styles.animation : ""}`} />
           </div>
         </div>
         <div className={styles.home__section1}>
@@ -157,15 +158,16 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.box__container__image}>
-            <img src="https://i.ibb.co/cFGjxK5/Imagen-de-Whats-App-2024-01-20-a-las-21-57-47-ae6675fc.jpg" alt="casa" className={`${styles.imagen__demostracion} ${imageAnimation2? styles.animation : ""}`}/>
+            <img src="https://i.ibb.co/cFGjxK5/Imagen-de-Whats-App-2024-01-20-a-las-21-57-47-ae6675fc.jpg" alt="mendoza-&-asociados-image" className={`${styles.imagen__demostracion} ${imageAnimation2? styles.animation : ""}`}/>
           </div>
         </div>
         <article className={styles.footer__container}>
             <p>¡No esperes más para darle un nuevo aspecto a tu hogar! Contáctanos para obtener un presupuesto gratuito y sin compromiso. Estamos ansiosos por trabajar contigo y hacer realidad tus ideas.</p>
             <p>¡Agradecemos el tiempo que han dedicado para conocer más sobre "MultiColor"! Estamos entusiasmados de poder ser parte de la transformación y el cuidado de su hogar. ¡Esperamos trabajar juntos muy pronto!</p>
         </article>
-        <img src="./img/wave.svg" alt="svg" />
+        {/* <img src="./img/wave.svg" alt="svg" /> */}
       </div>
+      <Footer/>
     </div>
   )
 }

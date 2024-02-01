@@ -141,6 +141,9 @@
         from {transform: translateZ(-1000px);}
         to {transform: translateZ(0px);}
     }
+    .home__container{
+        padding-top: 13vh;
+    }
 }
 
 @media (width>1000px) {
@@ -167,7 +170,6 @@
     }
     .footer__container{
         font-size: 1.2rem;
-        margin-bottom: 10rem;
     }
     .home__section1{
         flex-wrap: nowrap;

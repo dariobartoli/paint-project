@@ -6,6 +6,7 @@ import { useCasa } from '../context/CasaContext'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from '../components/Footer';
 
 
 const Work = () => {
@@ -45,28 +46,38 @@ const Work = () => {
       pauseOnHover: true
     };
   return (
-    <div className={styles.container}>
-        {casa[0]? 
-        <h3 className={styles.fecha}>{casa[0].fecha}</h3>
-        :""}
-        <Slider {...settings} className={styles.images__container}>
-            {casa[0]? casa[0].fotos.map((item,index) => (
-                <div key={index} className={styles.images__box}>
-                    <img src={item} alt="" />
-                </div>
-            )): ""}
-        </Slider>
-        <p className={styles.material__text}>Material utilizado: <span>{casa[0]? casa[0].material :""}</span></p>
-
-        <div className={styles.video__container}>
+    <div>
+      <div className={styles.container}>
+          {casa[0]? 
+          <h1 className={styles.fecha}>{casa[0].fecha}</h1>
+          :""}
+          <Slider {...settings} className={styles.images__container}>
+              {casa[0]? casa[0].fotos.map((item,index) => (
+                  <div key={index} className={styles.images__box}>
+                      <img src={item} alt="mendoza-&-asociados-image" />
+                  </div>
+              )): ""}
+          </Slider>
+          <p className={styles.material__text}>Material utilizado: <span>{casa[0]? casa[0].material :""}</span></p>
+          
           {casa[0] && casa[0].videos? 
-          casa[0].videos.map((item, index) => (
-            <div key={index}>
-              <iframe src={`https://www.youtube.com/embed/${item}`} frameBorder="0" allowFullScreen={true}></iframe>
-            </div>
-          ))
+            <details className={styles.videos__details}>
+              <summary>Videos</summary>
+              <div className={styles.video__container}>
+                {casa[0] && casa[0].videos? 
+                casa[0].videos.map((item, index) => (
+                  <div key={index}>
+                    <iframe src={`https://www.youtube.com/embed/${item}`} frameBorder="0" allowFullScreen={true}></iframe>
+                  </div>
+                ))
+                : ""}
+              </div>
+            </details>
           : ""}
-        </div>
+
+      </div>
+      <Footer/>
+
     </div>
   )
 }

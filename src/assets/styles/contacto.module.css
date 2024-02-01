@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 5rem;
     gap: 1.5rem;
 }
 
@@ -38,6 +38,11 @@
     align-self: center;
     padding-right: 2rem;
     gap: 0.5rem;
+}
+.contacto__ancor__contain>h3{
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 1px rgb(71, 71, 71);
+    margin-bottom: 4px;
 }
 
 .contacto__ancor {
@@ -73,15 +78,16 @@
     }
     .contacto__container {
         min-height: 80vh;
+        padding-top: 14vh;
+    }
+    .contacto__ancor__contain>h3{
+        font-size: 1.8rem;
     }
 }
 
 @media (width>1024px) {
     .contacto__title {
         font-size: 2.7rem;
-    }
-    .contacto__container {
-        padding-top: 2.5rem;
     }
 }
 
@@ -94,7 +100,6 @@
     }
     .contacto__container {
         min-height: 90vh;
-        padding-top: 4rem;
         gap: 5rem;
     }
 }

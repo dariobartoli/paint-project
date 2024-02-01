@@ -25,10 +25,10 @@ const Slide = () => {
         <h4 className="slide__title">¡Prueba el cambio!</h4>
         <div className="before_after_slider">
           <div className="img_after">
-            <img src="https://i.ibb.co/6smdpC5/Imagen-de-Whats-App-2024-01-20-a-las-21-28-24-122d8b9c.jpg" alt="" className="slide__image"/>
+            <img src="https://i.ibb.co/6smdpC5/Imagen-de-Whats-App-2024-01-20-a-las-21-28-24-122d8b9c.jpg" alt="mendoza-&-asociados-image" className="slide__image"/>
           </div>
           <div className="img_before" >
-            <img src="https://i.ibb.co/d7B40FV/Imagen-de-Whats-App-2024-01-20-a-las-21-28-25-a4d133e2.jpg" alt="" className="slide__image"/>
+            <img src="https://i.ibb.co/d7B40FV/Imagen-de-Whats-App-2024-01-20-a-las-21-28-25-a4d133e2.jpg" alt="mendoza-&-asociados-image" className="slide__image"/>
           </div>
         </div>
       </div>

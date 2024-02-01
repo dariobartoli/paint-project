@@ -1,11 +1,11 @@
 .works__container{   
     background: rgb(14,14,14);
     background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(48,48,48,1) 100%);
-    padding-top: 1.5rem;
+    padding-top: 11vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 .works__container>section{
@@ -82,7 +82,7 @@
         font-size: 2rem;
     }
     .works__container{
-        padding-top: 2.5rem;
+        padding-top: 13vh;
     }
 }
 
@@ -91,14 +91,5 @@
     .works__title{
         font-size: 2.7rem;
     }
-    .works__container{
-        padding-top: 3rem;
-    }
  
-}
-
-@media(width> 1440px) {
-    .works__container{
-        padding-top: 3.5rem;
-    }
 }
