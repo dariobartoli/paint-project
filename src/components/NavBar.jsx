@@ -37,7 +37,7 @@ const NavBar = () => {
                 <h1>Mendoza & Asociados</h1>
             </div>
         </div>
-        <div className={`${styles.navBar__menu} ${showModal? styles.show : ""}`}>
+        <div className={`${styles.navBar__menu} ${scroll? styles.navBar__menu__scroll : ""} ${showModal? styles.show : ""}`}>
             <div>
                 <NavLink to={"/"} onClick={handleClick} className={(navData) => navData.isActive? styles.active : styles.ancor}>Inicio</NavLink>
                 <div></div>

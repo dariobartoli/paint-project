@@ -57,7 +57,7 @@
 .navBar__menu{
     position: fixed;
     width: 100%;
-    top: 8vh;
+    top: 10vh;
     left: 0px;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.3s;
@@ -66,6 +66,9 @@
     align-items: center;
     justify-content: center;
     z-index: 4;
+}
+.navBar__menu__scroll{
+    top: 7vh;
 }
 .navBar__menu>div{
     width: 100%;

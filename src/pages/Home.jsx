@@ -163,7 +163,7 @@ const Home = () => {
         </div>
         <article className={styles.footer__container}>
             <p>¡No esperes más para darle un nuevo aspecto a tu hogar! Contáctanos para obtener un presupuesto gratuito y sin compromiso. Estamos ansiosos por trabajar contigo y hacer realidad tus ideas.</p>
-            <p>¡Agradecemos el tiempo que han dedicado para conocer más sobre "MultiColor"! Estamos entusiasmados de poder ser parte de la transformación y el cuidado de su hogar. ¡Esperamos trabajar juntos muy pronto!</p>
+            <p>¡Agradecemos el tiempo que han dedicado para conocer más sobre "Mendoza & Asociados"! Estamos entusiasmados de poder ser parte de la transformación y el cuidado de su hogar. ¡Esperamos trabajar juntos muy pronto!</p>
         </article>
         {/* <img src="./img/wave.svg" alt="svg" /> */}
       </div>
