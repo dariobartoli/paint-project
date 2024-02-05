@@ -1,19 +1,38 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '../assets/styles/navBar.module.css'
 import 'animate.css';
 
 const NavBar = () => {
     const [showModal, setShowModal] = useState(false)
+    const [scroll, setScroll] = useState(false)
     const handleClick = ()=>{
         setShowModal(!showModal)
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+          // Verificar si el scroll está en la parte superior de la página
+          const isAtTop = window.scrollY === 0;
+      
+          // Actualizar el estado de scroll
+          setScroll(!isAtTop);
+        };
+      
+        // Agregar el evento de scroll al montar el componente
+        window.addEventListener('scroll', handleScroll);
+      
+        // Eliminar el evento de scroll cuando el componente se desmonta
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
   return (
-    <div className={styles.navBar__container}>
+    <div className={`${styles.navBar__container} ${scroll? styles.scroll__active : ""}`}>
         <div className={styles.title__contain}>
-            <img src="https://i.ibb.co/QbTpM7b/logo2.png" alt="mendoza-&-asociados-image" className={`${styles.logo__navBar} animate__animated animate__zoomIn`} />
+            <img src="https://i.ibb.co/QbTpM7b/logo2.png" alt="mendoza-&-asociados-image" className={`${styles.logo__navBar}`} />
             <div className={`${styles.title__navBar} animate__animated animate__zoomIn`}>
                 <h1>Mendoza & Asociados</h1>
             </div>

@@ -1,6 +1,6 @@
 .home__container{
-    background: rgb(14,14,14);
-    background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(48,48,48,1) 100%);
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(43,43,43,1) 100%);
     min-height: 83vh;
     display: flex;
     flex-direction: column;
@@ -55,9 +55,9 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
-    border-radius: 0.3rem;
-    border: 1px solid rgb(82, 82, 82);
-    box-shadow: 0px 0px 2px rgb(148, 148, 148);
+    border-radius: 0.8rem;
+    border: 1px solid rgb(44, 44, 44);
+    box-shadow: 0px 0px 1px rgb(61, 61, 61);
 }
 
 
@@ -142,7 +142,7 @@
         to {transform: translateZ(0px);}
     }
     .home__container{
-        padding-top: 13vh;
+        padding-top: 16vh;
     }
 }
 

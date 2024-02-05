@@ -33,7 +33,7 @@
 .slide__image{
   width: 300px;
   height: 165px;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   object-fit: cover;
 }
 

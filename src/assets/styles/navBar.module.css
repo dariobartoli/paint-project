@@ -1,7 +1,9 @@
 .navBar__container{
+/*     background: rgb(107,107,107);
+    background: linear-gradient(180deg, rgba(107,107,107,1) 0%, rgba(101,101,101,1) 25%, rgba(101,101,101,1) 75%, rgba(107,107,107,1) 100%); */
     background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
-    border-bottom: 2px white solid;
-    height: 8vh;
+    border-bottom: 1px rgb(172, 172, 172) solid;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,13 +11,27 @@
     position: fixed;
     width: 100%;
     z-index: 4;
+    transition: 0.7s;
+}
+.scroll__active{
+    height: 7vh;
+    transition: 0.7s;
 }
 .logo__navBar{
     width: 40px;
     height: 40px;
+    animation: giro 5s linear infinite;
+}
+@keyframes giro {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
 }
 .title__navBar{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+}
+.title__navBar>h1{
+    color: #eeeeee;
 }
 .navBar__hambur{
     cursor: pointer;
@@ -97,13 +113,12 @@
 
 @media (width>769px){
     .navBar__container{
-        background-image: linear-gradient(to bottom, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #202020, #202020, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
-        border-bottom: 2px white solid;
-        height: 10vh;
-        display: flex;
-        align-items: center;
+        height: 12vh;
         justify-content: space-around;
-        padding: 1.5rem;
+    }
+    .scroll__active{
+        height: 9vh;
+        transition: 0.7s;
     }
     .navBar__hambur{
         display: none;
@@ -116,21 +131,24 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
         width: 600px;
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 2rem;
     }
     .ancor{
         background-color: transparent;
         width: auto;
+        border-bottom: none;
+        font-size: 1.4rem;
     }
     .active{
         background-color: transparent;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: bold;
+        border-bottom: none;
     }
     .logo__navBar{
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
     }
     .title__navBar{
         display: block;
@@ -143,7 +161,7 @@
     }
     .navBar__menu>div>div{
         width: 100%;
-        bottom: 10px;
+        bottom: 8px;
         height: 4px;
         border-radius: 3px;
         background-color: transparent;
@@ -164,10 +182,6 @@
     }
     .title__contain{
         gap: 1rem;
-    }
-    .logo__navBar{
-        width: 60px;
-        height: 60px;
     }
 }
 

@@ -2,21 +2,44 @@ import React from "react";
 import { useEffect } from "react";
 
 const Slide = () => {
+  const windowWidth = window.innerWidth;
+
 
   useEffect(() => {
-    jQuery(document).ready(function () {
-      let a = jQuery(".img_before"),
-        b = jQuery(".img_before img").width(),
-        c = Math.round(b / 2);
-      a.width(c),
-        jQuery(".before_after_slider").on("pointermove", function (event) {
-          let c = event.offsetX || event.clientX - jQueryimg_after.offset().left;
-          a.width(c);
+    if (windowWidth<1000) {
+      jQuery(document).ready(function () {
+        let a = jQuery(".img_before"),
+          b = jQuery(".img_before img").width(),
+          c = Math.round(b / 2);
+        a.width(c);
+  
+        // Cambiamos el evento de 'pointermove' a 'click'
+        jQuery(".before_after_slider").on("click", function (event) {
+          // Obtenemos la posición X del clic relativa al contenedor
+          let offsetX = event.offsetX || event.clientX - jQuery(this).offset().left;
+          a.width(offsetX);
         });
-        jQuery(".before_after_slider").on("pointerleave", function () {
+  
+        // Restauramos la barra a su posición original al dejar de hacer clic
+        jQuery(".before_after_slider").on("mouseleave", function () {
           a.stop().animate({ width: c }, 1000);
         });
-    });
+      });
+    }else{
+      jQuery(document).ready(function () {
+        let a = jQuery(".img_before"),
+          b = jQuery(".img_before img").width(),
+          c = Math.round(b / 2);
+        a.width(c),
+          jQuery(".before_after_slider").on("mousemove", function (event) {
+            let c = event.offsetX || event.clientX - jQueryimg_after.offset().left;
+            a.width(c);
+          });
+          jQuery(".before_after_slider").on("mouseleave", function () {
+            a.stop().animate({ width: c }, 1000);
+          });
+      }); 
+    }
   }, [])
   
   return (
