@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styles from '../assets/styles/work.module.css'
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { useCasa } from '../context/CasaContext'
 import Slider from "react-slick";
@@ -59,6 +59,7 @@ const Work = () => {
               )): ""}
           </Slider>
           <p className={styles.material__text}>Material utilizado: <span>{casa[0]? casa[0].material :""}</span></p>
+          <p>Proceso <span>{casa[0]? casa[0].descripcion :""}</span></p>
           
           {casa[0] && casa[0].videos? 
             <details className={styles.videos__details}>
@@ -74,6 +75,13 @@ const Work = () => {
               </div>
             </details>
           : ""}
+
+
+          <NavLink to={'/works'} className={styles.button__volver}>
+            <span class="material-symbols-outlined">reply</span>
+            Volver
+          </NavLink>
+
 
       </div>
       <Footer/>

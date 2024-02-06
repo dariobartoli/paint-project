@@ -20,7 +20,7 @@
 .logo__navBar{
     width: 40px;
     height: 40px;
-    animation: giro 5s linear infinite;
+    animation: giro 15s linear infinite;
 }
 @keyframes giro {
     0%{transform: rotate(0deg);}

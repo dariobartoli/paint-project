@@ -45,7 +45,7 @@ const Slide = () => {
   return (
     <div>
       <div className="slide__container">
-        <h4 className="slide__title">¡Prueba el cambio!</h4>
+        <h4 className="slide__title">Renova tu hogar</h4>
         <div className="before_after_slider">
           <div className="img_after">
             <img src="https://i.ibb.co/6smdpC5/Imagen-de-Whats-App-2024-01-20-a-las-21-28-24-122d8b9c.jpg" alt="mendoza-&-asociados-image" className="slide__image"/>

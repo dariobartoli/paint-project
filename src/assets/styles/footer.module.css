@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    border-top: 1px solid #4d4d4d;
+    border-top: 1px solid #525252;
     gap: 1rem;
 }
 .footer>h4{

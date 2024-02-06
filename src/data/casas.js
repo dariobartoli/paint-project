@@ -8,6 +8,9 @@ const casas = [
             'https://i.ibb.co/whSx790/Imagen-de-Whats-App-2024-01-20-a-las-21-52-54-2efd666f.jpg',
             'https://i.ibb.co/x25Sptz/Imagen-de-Whats-App-2024-01-20-a-las-21-52-54-e1044c53.jpg'
         ],
+        videos: [
+            't-bf9pvdkh4'
+        ],
         material: 'Revestimiento revear, marble medio gris urbano'
     },
     {
@@ -24,7 +27,8 @@ const casas = [
             'https://i.ibb.co/Nxt1Q78/Imagen-de-Whats-App-2024-01-20-a-las-21-57-49-a3dd1555.jpg',
             'https://i.ibb.co/mXCrqhL/Imagen-de-Whats-App-2024-01-20-a-las-21-57-49-fa5c1d39.jpg'
         ],
-        material: 'Revestimiento revear, marble'
+        material: 'Revestimiento revear, marble',
+        descripcion: "dsadas dasdasda dsadasdasdsa dsadas asddsadsada dadsadas dadasdsa dsadasdsa dsadas dasdasda dsadasdasdsa dsadas asddsadsada dadsadas dadasdsa dsadasdsadsadas dasdasda dsadasdasdsa dsadas asddsadsada dadsadas dadasdsa dsadasdsadsadas dasdasda dsadasdasdsa dsadas asddsadsada dadsadas dadasdsa dsadasdsa"
     },
     {
         id: 3,
@@ -39,8 +43,8 @@ const casas = [
         ],
         material: 'vacio',
         videos:[
-            'absDFMioSSE',
-            'ZSPcmkvysDc'
+            '5n3qysjG43U',
+            '1CyVH0F2ekc'
         ]
     },
     {
